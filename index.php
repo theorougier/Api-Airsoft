@@ -8,7 +8,7 @@ $app = AppFactory::create();
 // Add Routing Middleware
 $app->addRoutingMiddleware();
 
-$conn = new PDO('mysql:host=127.0.0.1;dbname=test', 'root', '', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+$conn = new PDO('mysql:host=airsoft-bot-api.mysql.eu2.frbit.com;dbname=airsoft-bot-api', 'airsoft-bot-api', '8Dg05Dk-W-IwmevNd4no1EIv', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 
